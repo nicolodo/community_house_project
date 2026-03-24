@@ -1,0 +1,34 @@
+
+import { db } from "@/db";
+
+export async function Reactions({post_id}) {
+    const res = await db.query(`
+        SELECT * FROM posts_reactions WHERE post_id = $1`,post_id)
+        // JOIN users ON posts_reactions.user_id = post_id`, post_id)
+    console.log(res)
+    const reactions = res.rows
+    console.log(res)
+    // Reactions.rows = {id, reaction, user_id, post_id}
+
+    return (
+        <div>
+            <ul>
+                {reactions.map((reaction) => (
+                    <li
+                    key={reaction.id}
+                    >
+                        <p>{reaction.reaction}:{reaction.user_id}</p>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    )
+
+
+}
+
+// SELECT posts.title, posts.content, categories.name AS category, tags.name AS tag 
+// FROM posts
+// JOIN categories ON posts.category_id = categories.id
+// JOIN posts_tags ON posts.id = posts_tags.post_id
+// JOIN tags ON posts_tags.tag_id = tags.id;

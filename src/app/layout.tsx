@@ -1,7 +1,7 @@
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { auth } from "@clerk/nextjs/server";
-import AppLayout from "@/components/AppLayout";
+import AppLayout from "./components/AppLayout";
 
 export default async function RootLayout({
   children,

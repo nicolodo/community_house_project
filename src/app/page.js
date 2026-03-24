@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { UserList } from "./components/UserList";
+import { UserList } from "../components/UserList";
 // import { Reactions } from "./components/Reactions";
 
 export default function Home() {

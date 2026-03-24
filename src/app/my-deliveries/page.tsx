@@ -1,19 +1,17 @@
+import InformationCard from "@/app/components/InformationCard";
+import PageNameAndDescription from "@/app/components/PageNameAndDescription";
+
 export default function MyDeliveriesPage() {
   return (
     <div className="min-h-screen bg-gray-50 p-6">
-      <div className="mb-6">
-        <h1 className="text-3xl font-bold">My Deliveries</h1>
-        <p className="text-gray-500">
-          Track the requests you’ve volunteered to deliver.
-        </p>
-      </div>
-
-      <div className="bg-white p-10 rounded-2xl shadow text-center">
-        <p className="text-lg font-semibold">No more deliveries</p>
-        <p className="text-gray-500 mt-2">
-          Volunteer for a request to get started 🚚
-        </p>
-      </div>
+      <PageNameAndDescription
+        PageName={"My Deliveries"}
+        Description={"Track the requests you've volunteered to deliver."}
+      />
+      <InformationCard
+        Info="No more deliveries"
+        NiceMessage="Volunteer for a request to get started"
+      />
     </div>
   );
 }

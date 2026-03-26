@@ -13,6 +13,14 @@ export default function CreateRequest() {
 
         <select className="w-full border p-2 rounded">
           <option>Produce & Veggies</option>
+          <option>Meat & Seafood</option>
+          <option>Dairy & Refrigerated</option>
+          <option>Frozen Food</option>
+          <option>Bakery</option>
+          <option>Beverages</option>
+          <option>Snacks</option>
+          <option>Household & Cleaning</option>
+          <option>Personal Care</option>
           <option>Other</option>
         </select>
       </div>

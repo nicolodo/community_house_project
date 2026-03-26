@@ -58,6 +58,9 @@ export default function AppLayout({ children }: { children: ReactNode }) {
                 ⚙️ Settings
               </Link>
             </nav>
+            <p className="mt-70 text-lg text-gray-600">
+              Made By Nicolodo-Charlie-Connor.
+            </p>
           </div>
 
           {/* overlay */}

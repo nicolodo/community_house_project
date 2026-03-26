@@ -5,7 +5,6 @@ import { UserList } from "@/app/components/UserList";
 export default function Dashboard() {
   return (
     <main className="flex-1 p-6">
-      <UserList />
       <div className="flex justify-between items-center mb-6">
         <div className="flex items-center gap-4"></div>
       </div>

@@ -11,7 +11,6 @@ export async function UserList() {
 
   return (
     <div>
-      <p>Hi how are you?</p>
       <ul>
         {users.map((user) => (
           <li key={user.clerk_id}>

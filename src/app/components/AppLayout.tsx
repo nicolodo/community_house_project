@@ -15,6 +15,17 @@ export default function AppLayout({ children }: { children: ReactNode }) {
           <div className="w-64 bg-white p-6 shadow-lg">
             <h2 className="text-xl font-bold mb-6">The Organic Collective</h2>
 
+            <Link href="/request">
+              <button className="mt-4 w-full bg-green-600 text-white py-2 rounded-full">
+                Create Grocery List
+              </button>
+            </Link>
+            <Link href="/CPostPage">
+              <button className="mt-4 w-full bg-green-600 text-white py-2 rounded-full">
+                Create Post
+              </button>
+            </Link>
+
             <nav className="flex flex-col gap-2 text-gray-600">
               <Link
                 href="/dashboard"
@@ -58,6 +69,17 @@ export default function AppLayout({ children }: { children: ReactNode }) {
       <aside className="hidden md:block w-64 bg-white border-r p-6">
         <h2 className="text-xl font-bold mb-6">The Organic Collective</h2>
 
+        <Link href="/request">
+          <button className="mt-4 w-full bg-green-600 text-white py-2 rounded-full">
+            Create Grocery List
+          </button>
+        </Link>
+        <Link href="/CPostPage">
+          <button className="mt-4 w-full bg-green-600 text-white py-2 rounded-full">
+            Create Post
+          </button>
+        </Link>
+
         <nav className="flex flex-col gap-2 text-gray-600">
           <Link href="/dashboard" className="p-2 rounded-lg hover:bg-gray-100">
             🏠 Feed
@@ -81,6 +103,9 @@ export default function AppLayout({ children }: { children: ReactNode }) {
             ⚙️ Settings
           </Link>
         </nav>
+        <p className="mt-110 text-lg text-gray-600">
+          Made By Nicolodo-Charlie-Connor.
+        </p>
       </aside>
 
       {/* MAIN */}

@@ -15,6 +15,9 @@ export default function Page() {
           <p className="mt-4 text-lg text-gray-200">
             Rooted in community. Harvested by neighbors.
           </p>
+          <p className="mt-4 text-lg text-gray-200">
+            Made By Nicolodo-Charlie-Connor.
+          </p>
         </div>
       </div>
 

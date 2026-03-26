@@ -7,7 +7,8 @@ export default async function Home() {
   // const { userId } = await auth();
   // console.log(userId);
 
-  getUser();
+  const user = await getUser();
+  console.log(user);
 
   // if (!userId) {
   //   redirect("/sign-up");

@@ -11,11 +11,11 @@ export async function UserList() {
 
   return (
     <div>
-      <p>Hi how are you?</p>
+      <p>Welcome </p>
       <ul>
         {users.map((user) => (
           <li key={user.clerk_id}>
-            <p>{user.m_name}</p>
+            <p>{user.f_name}</p>
           </li>
         ))}
       </ul>
